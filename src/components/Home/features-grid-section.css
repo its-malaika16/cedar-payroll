@@ -1,0 +1,245 @@
+.payroll-platform {
+  width: 100%;
+  background: var(--primary);
+  padding: 120px 80px;
+}
+
+.payroll-platform-container {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 120px;
+  align-items: start;
+}
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.platform-content {
+  padding-top: 30px;
+}
+
+.platform-title {
+  color: #ffffff;
+  font-size: --subtitle-2;
+  /* font-weight: 800;
+  line-height: 1.15; */
+  margin-bottom: 50px;
+}
+
+.platform-title span {
+  color: var(--secondary);
+}
+
+.platform-description {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.35;
+  max-width: 390px;
+}
+
+/* =========================
+   FEATURES GRID
+========================= */
+
+.platform-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px 90px;
+}
+
+.platform-feature-card {
+  color: white;
+}
+
+.feature-icon-wrapper {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+}
+
+.feature-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.feature-title {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+
+.feature-description {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.45;
+  max-width: 320px;
+}
+
+/* =========================
+   LARGE DESKTOP
+========================= */
+
+@media (min-width: 1600px) {
+  .payroll-platform-container {
+    max-width: 1600px;
+  }
+
+  .platform-features {
+    gap: 90px 120px;
+  }
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media (max-width: 1400px) {
+  .payroll-platform {
+    padding: 100px 60px;
+  }
+
+  .payroll-platform-container {
+    gap: 80px;
+  }
+
+  .platform-title {
+    font-size: 58px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .platform-title {
+    font-size: 52px;
+  }
+
+  .platform-features {
+    gap: 60px;
+  }
+
+  .feature-title {
+    font-size: 24px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .payroll-platform {
+    padding: 80px 40px;
+  }
+
+  .payroll-platform-container {
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+
+  .platform-content {
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .platform-description {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .platform-features {
+    gap: 50px 40px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .payroll-platform {
+    padding: 70px 20px;
+  }
+
+  .platform-title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .platform-description {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .platform-features {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .platform-feature-card {
+    text-align: center;
+  }
+
+  .feature-icon-wrapper {
+    margin: 0 auto 20px;
+  }
+
+  .feature-title {
+    font-size: 24px;
+  }
+
+  .feature-description {
+    font-size: 16px;
+    max-width: 100%;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .payroll-platform {
+    padding: 60px 16px;
+  }
+
+  .platform-title {
+    font-size: 32px;
+  }
+
+  .platform-description {
+    font-size: 16px;
+  }
+
+  .feature-icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .feature-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .feature-title {
+    font-size: 22px;
+  }
+
+  .feature-description {
+    font-size: 15px;
+  }
+}
