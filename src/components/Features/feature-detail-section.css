@@ -1,0 +1,291 @@
+.payroll-features-section {
+  width: 100%;
+  background: var(--background);
+  padding: 100px 80px;
+}
+
+.payroll-features-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* ==========================
+   FEATURE BLOCK
+========================== */
+
+.feature-block {
+  display: grid;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+/* Content Left | Icon Right */
+
+.feature-block.image-right {
+  grid-template-columns: 1fr 350px;
+}
+
+/* Icon Left | Content Right */
+
+.feature-block.image-left {
+  grid-template-columns: 300px 1fr;
+}
+
+.feature-block:last-child {
+  margin-bottom: 0;
+}
+
+/* ==========================
+   CONTENT
+========================== */
+
+.feature-content {
+  width: 100%;
+}
+
+.feature-heading {
+  color: var(--primary);
+  line-height: 1.15;
+  margin-bottom: 20px;
+  max-width: 740px;
+}
+
+.feature-desc {
+  color: var(--primary);
+  line-height: 1.5;
+
+  margin-bottom: 30px;
+}
+
+.feature-lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  max-width: 900px;
+}
+
+.feature-lists ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.feature-lists li {
+  color: var(--primary);
+  line-height: 1.8;
+}
+
+/* ==========================
+   ICON CARD
+========================== */
+
+.feature-icon-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-icon-card {
+  width: 310px;
+  height: 310px;
+
+  background: #ffffff;
+  border-radius: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.feature-icon {
+  width: 55%;
+  height: 55%;
+  object-fit: contain;
+}
+
+/* ==========================
+   LARGE DESKTOP
+========================== */
+
+@media (min-width: 1600px) {
+  .payroll-features-container {
+    max-width: 1650px;
+  }
+
+  .feature-block {
+    gap: 120px;
+  }
+
+  .feature-heading {
+    font-size: 52px;
+  }
+}
+
+/* ==========================
+   DESKTOP
+========================== */
+
+@media (max-width: 1400px) {
+  .payroll-features-section {
+    padding: 90px 60px;
+  }
+
+  .feature-block {
+    gap: 60px;
+  }
+
+  .feature-heading {
+    font-size: 42px;
+  }
+
+  .feature-icon-card {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* ==========================
+   LAPTOP
+========================== */
+
+@media (max-width: 1200px) {
+  .feature-block {
+    grid-template-columns: 1fr 220px;
+    gap: 50px;
+    margin-bottom: 100px;
+  }
+
+  .feature-heading {
+    font-size: 38px;
+  }
+
+  .feature-lists li {
+    font-size: 16px;
+  }
+
+  .feature-icon-card {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width: 992px) {
+  .payroll-features-section {
+    padding: 80px 40px;
+  }
+
+  .feature-block {
+    grid-template-columns: 1fr;
+    gap: 35px;
+
+    text-align: center;
+    margin-bottom: 90px;
+  }
+
+  .feature-icon-area {
+    order: -1;
+  }
+
+  .feature-heading {
+    max-width: 100%;
+    font-size: 40px;
+  }
+
+  .feature-desc {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feature-lists {
+    text-align: left;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-icon-card {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+  .payroll-features-section {
+    padding: 70px 20px;
+  }
+
+  .feature-block {
+    margin-bottom: 70px;
+  }
+
+  .feature-heading {
+    font-size: 32px;
+  }
+
+  .feature-desc {
+    font-size: 16px;
+  }
+
+  .feature-lists {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .feature-lists li {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .feature-icon-card {
+    width: 150px;
+    height: 150px;
+  }
+
+  .feature-icon {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media (max-width: 480px) {
+  .payroll-features-section {
+    padding: 60px 16px;
+  }
+
+  .feature-heading {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .feature-desc {
+    font-size: 15px;
+  }
+
+  .feature-lists li {
+    font-size: 14px;
+  }
+
+  .feature-icon-card {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+  }
+
+  .feature-icon {
+    width: 55px;
+    height: 55px;
+  }
+}
