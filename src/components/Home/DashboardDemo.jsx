@@ -7,14 +7,12 @@ export default function DashboardDemo() {
 
         {/* ✅ TOP BAR */}
         <div className="top-bar">
-          <span className="dots">● ● ●</span>
-          <span className="title">payroll.run</span>
-          <span className="live">● LIVE</span>
+          <img src= "/assets/logo/payrolllogo.svg" />
         </div>
 
         {/* ✅ HEADER */}
         <div className="header-row">
-          <span>PROCESSING PAYROLL</span>
+        <span>PROCESSING PAYROLL</span>
           <span className="amount">£142,850</span>
         </div>
  
@@ -56,36 +54,38 @@ export default function DashboardDemo() {
             <div 
               className="user" 
               key={i} 
-              style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', opacity: 1, color: '#ffffff', visibility: 'visible' }}
+              style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', opacity: 1, color: 'var(--primary)', visibility: 'visible' }}
             >
               <div className="user-left" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <div className="avatar" style={{ color: '#d4af37' }}>{user.initials}</div>
+                <div className="avatar" style={{ color: 'var(--primary)' }}>{user.initials}</div>
                 <div style={{ display: 'block', textAlign: 'left' }}>
-                  <strong style={{ color: '#ffffff', display: 'block', fontSize: '14px' }}>{user.name}</strong>
-                  <p style={{ color: '#9fb3ad', margin: '2px 0 0 0', fontSize: '12px', display: 'block' }}>{user.role}</p>
+                  <strong style={{ color: 'var(--primary)', display: 'block', fontSize: '18px' }}>{user.name}</strong>
+                  <p style={{ color: 'var(--primary)', margin: '2px 0 0 0', fontSize: '16px', display: 'block' }}>{user.role}</p>
                 </div>
               </div>
 
               <div className="user-right" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <span className="user-amount" style={{ color: '#d4af37', fontWeight: 600 }}>{user.amount}</span>
-                <span className="check" style={{ color: '#d4af37' }}>✔</span>
+                <span className="user-amount" style={{ color: 'var(--primary)', fontWeight: 600 }}>{user.amount}</span>
+                <span className="check" style={{ color: 'var(--secondary)' }}>✔</span>
               </div>
             </div>
           ))}
         </div>
 
+        <div className = "line" > </div>
+
         {/* ✅ BOTTOM */}
         <div className="footer">
           <div>
-            <span className="label">EMPLOYEES</span>
+            <span className="label">Employees</span>
             <strong>247</strong>
           </div>
           <div>
-            <span className="label">PAYSLIP</span>
+            <span className="label">Payslip</span>
             <strong className="gold">Generated</strong>
           </div>
           <div>
-            <span className="label">PENSION</span>
+            <span className="label">Pension</span>
             <strong className="gold">Auto</strong>
           </div>
         </div>

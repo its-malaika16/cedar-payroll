@@ -1,4 +1,5 @@
 import "./platform-solution-section.css";
+import DashboardDemo from "./DashboardDemo";
 
 const solutions = [
   {
@@ -25,7 +26,7 @@ const PlatformSolutionsSection = () => {
         {/* Left Image */}
 
         <div className="platform-image-wrapper">
-          <img className = "platform-image" src = "/assets/images/platform-solution.png "/>
+          <DashboardDemo />
         </div>
 
         {/* Right Content */}
