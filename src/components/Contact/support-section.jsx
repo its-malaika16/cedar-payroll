@@ -1,9 +1,6 @@
 import { useState } from "react";
-2
 import "./support-section.css";
-3
 import { Link } from "react-router-dom";
-4
 import ContactModal from "../Home/contact-modal";
 
 
