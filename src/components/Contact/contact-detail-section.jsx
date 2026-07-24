@@ -45,8 +45,10 @@ const ContactCardsSection = () => {
                                     className = "contact-icon"
                                 />
                             </div>
-
-                            <p className="contact-card-line1 number">
+<p className="contact-card-line1 number">
+                                {item.title}
+                            </p>
+                            <p className="contact-card-line1 lighttext">
                                 {item.line1}
                             </p>
 

@@ -19,8 +19,8 @@
   margin: 0 auto;
 
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items:center;
+  justify-content: center;
 
   padding: 20px 80px;
 }
@@ -29,12 +29,13 @@
 
 .logo {
   display: flex;
-  align-items: center;
+  align-items:center;
   text-decoration: none;
+  margin-right: 50px;
 }
 
 .logo img {
-  width: 220px;
+  width: 130px;
   height: auto;
   display: block;
 }
@@ -44,13 +45,13 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 70px;
+  gap: 30px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #173d70;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   transition: 0.3s ease;
