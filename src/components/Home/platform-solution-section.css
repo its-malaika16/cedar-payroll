@@ -25,7 +25,7 @@
 
 .platform-image {
   width: 100%;
-  height: auto;
+  /* height: auto; */
   display: block;
   border-radius: 36px;
   object-fit: cover;

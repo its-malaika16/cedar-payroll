@@ -3,19 +3,20 @@ import DashboardDemo from "./DashboardDemo";
 
 const solutions = [
   {
-    title: "HMRC Compliance",
+    title: "Employee Records",
     description:
-      "Stay compliant with RTI submissions, PAYE requirements, and pension regulations.",
+      "Keep employee information organised and up to date in one secure place.",
   },
   {
-    title: "P45 & P60 Management",
+    title: "Payslip Generation",
     description:
-      "Generate employee tax documents quickly and accurately.",
+       "Create and distribute payslips in just a few clicks.",
   },
   {
-    title: "Payroll Reporting",
+    title: "Holiday & Absence Tracking",
     description:
-      "Access reports on payroll costs, deductions, and employee earnings whenever you need them.",
+    "Monitor leave, sickness, and attendance alongside payroll processing.",
+      
   },
 ];
 
@@ -26,14 +27,14 @@ const PlatformSolutionsSection = () => {
         {/* Left Image */}
 
         <div className="platform-image-wrapper">
-          <DashboardDemo />
+          <img src = "/assets/images/home.png" className = "platform-image"/>
         </div>
 
         {/* Right Content */}
 
         <div className="platform-content">
           <p className="platform-heading subheading">
-            One platform, Unlimited Payroll Possibilities
+            Efficient & Reliable Payroll
             {/* <br /> */}
             
           </p>

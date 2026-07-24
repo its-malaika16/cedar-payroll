@@ -22,15 +22,15 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink to="/services" onClick={closeMenu}>
-            Features
+            What We Offer
           </NavLink>
 
           <NavLink to="/about" onClick={closeMenu}>
-            About
+            Who We Serve
           </NavLink>
 
           <NavLink to="/contact" onClick={closeMenu}>
-            Contact
+            About Cedar Payroll
           </NavLink>
         </nav>
 

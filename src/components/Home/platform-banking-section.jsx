@@ -2,19 +2,20 @@ import "./platform-banking-section.css";
 
 const services = [
   {
-    title: "Employee Records",
+    title: "HMRC Compliance ",
     description:
-      "Keep employee information organised and up to date in one secure place.",
+      "Stay compliant with RTI submissions, PAYE requirements, and pension regulations.",
   },
   {
-    title: "Payslip Generation",
+    title: "P45 & P60 Management",
     description:
-      "Create and distribute payslips in just a few clicks.",
+    "Generate employee tax documents quickly and accurately.",
+     
   },
   {
-    title: "Holiday & Absence Tracking",
+    title: "Payroll Reporting",
     description:
-      "Monitor leave, sickness, and attendance alongside payroll processing.",
+      "Access reports on payroll costs, deductions, and employee earnings whenever you need them.",
   },
 ];
 
@@ -26,7 +27,8 @@ const PayrollBankingSection = () => {
 
         <div className="banking-content">
           <h2 className="banking-title subheading">
-            Efficient & Reliable Payroll
+            One platform, Unlimited Payroll Possibilities
+            
           </h2>
 
           <div className="banking-services">
