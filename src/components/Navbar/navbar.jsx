@@ -11,39 +11,74 @@ const Navbar = () => {
     <header className="navbar">
       <div className="navbar-container">
         {/* Logo */}
-        <NavLink to="/" className="logo" onClick={closeMenu}>
-          <img src="/assets/logo/payrolllogo.svg" alt="logo" />
-        </NavLink>
 
-        {/* Navigation */}
-        <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <NavLink to="/" onClick={closeMenu}>
-            Home
-          </NavLink>
-
-          <NavLink to="/services" onClick={closeMenu}>
-            What We Offer
-          </NavLink>
-
-          <NavLink to="/about" onClick={closeMenu}>
-            Who We Serve
-          </NavLink>
-
-          <NavLink to="/contact" onClick={closeMenu}>
-            About Cedar Payroll
-          </NavLink>
-        </nav>
-
-        {/* Hamburger */}
-        <button
-          className={`hamburger ${menuOpen ? "open" : ""}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Menu"
+        <NavLink
+          to="/"
+          className="logo"
+          onClick={closeMenu}
         >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+          <img
+            src="/assets/logo/payrolllogo.svg"
+            alt="Cedar Payroll" />
+            </NavLink>
+          <nav
+            className={`nav-links ${menuOpen ? "active" : ""
+              }`}
+          >
+            <NavLink to="/" onClick={closeMenu}>
+              Home
+            </NavLink>
+
+            <NavLink
+              to="/services"
+              onClick={closeMenu}
+            >
+              What We Offer
+            </NavLink>
+
+            <NavLink
+              to="/about"
+              onClick={closeMenu}
+            >
+              Who We Serve
+            </NavLink>
+
+            <NavLink
+              to="/contact"
+              onClick={closeMenu}
+            >
+              About Cedar Payroll
+            </NavLink>
+          </nav>
+
+          {/* Right Side */}
+
+          <div className="navbar-right">
+            <NavLink
+              to="/support"
+              className="support-link"
+              
+            >
+              Support
+            </NavLink>
+
+            <button className="signin-btn" >
+              Sign In
+            </button>
+          </div>
+
+          {/* Mobile Hamburger */}
+
+          <button
+            className={`hamburger ${menuOpen ? "open" : ""
+              }`}
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
       </div>
     </header>
   );
