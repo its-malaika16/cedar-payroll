@@ -47,7 +47,7 @@ const PayrollBankingSection = () => {
         {/* Right Side */}
 
         <div className="banking-image-wrapper">
-          <img className = "banking-image" src = "/assets/images/platform.png" />
+          <img className = "banking-image" src = "/assets/images/platform-solution.png" />
         </div>
       </div>
     </section>
