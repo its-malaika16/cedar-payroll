@@ -7,6 +7,9 @@ import Features from './pages/features.jsx';
 import About from './pages/about.jsx';
 import Contact from './pages/contact.jsx';
 import ScrollToTop from './components/ScrollToTop';
+import TermsPage from './pages/TermsPage.jsx';
+import Privacy from './pages/PrivacyPage.jsx';
+import Support from './pages/support.jsx';
 
 
 function App() {
@@ -19,6 +22,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Features />} />
+        <Route path="/terms" element={<TermsPage/>} />
+        <Route path="/privacy" element={<Privacy/>} />
+        <Route path="/support" element={<Support/>} />
       </Routes>
        {/* { <Footer /> } */}
     </Router>

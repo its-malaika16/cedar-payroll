@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./navbar.css";
 
 const Navbar = () => {
@@ -20,65 +21,66 @@ const Navbar = () => {
           <img
             src="/assets/logo/payrolllogo.svg"
             alt="Cedar Payroll" />
-            </NavLink>
-          <nav
-            className={`nav-links ${menuOpen ? "active" : ""
-              }`}
+        </NavLink>
+        <nav
+          className={`nav-links ${menuOpen ? "active" : ""
+            }`}
+        >
+          <NavLink to="/" onClick={closeMenu}>
+            Home
+          </NavLink>
+
+          <NavLink
+            to="/services"
+            onClick={closeMenu}
           >
-            <NavLink to="/" onClick={closeMenu}>
-              Home
-            </NavLink>
+            What We Offer
+          </NavLink>
 
-            <NavLink
-              to="/services"
-              onClick={closeMenu}
-            >
-              What We Offer
-            </NavLink>
+          <NavLink
+            to="/about"
+            onClick={closeMenu}
+          >
+            Who We Serve
+          </NavLink>
 
-            <NavLink
-              to="/about"
-              onClick={closeMenu}
-            >
-              Who We Serve
-            </NavLink>
+          <NavLink
+            to="/contact"
+            onClick={closeMenu}
+          >
+            About Cedar Payroll
+          </NavLink>
+        </nav>
 
-            <NavLink
-              to="/contact"
-              onClick={closeMenu}
-            >
-              About Cedar Payroll
-            </NavLink>
-          </nav>
+        {/* Right Side */}
 
-          {/* Right Side */}
+        <div className="navbar-right">
+          <NavLink
+            to="/support"
+            className="support-link"
+          >
+            Support
+          </NavLink>
 
-          <div className="navbar-right">
-            <NavLink
-              to="/support"
-              className="support-link"
-              
-            >
-              Support
-            </NavLink>
-
-            <button className="signin-btn" >
+          <Link to="https://www.cedarpayroll.com">
+            <button className="signin-btn">
               Sign In
             </button>
-          </div>
+          </Link>
+        </div>
 
-          {/* Mobile Hamburger */}
+        {/* Mobile Hamburger */}
 
-          <button
-            className={`hamburger ${menuOpen ? "open" : ""
-              }`}
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Menu"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+        <button
+          className={`hamburger ${menuOpen ? "open" : ""
+            }`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </header>
   );

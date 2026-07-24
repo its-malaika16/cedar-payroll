@@ -1,4 +1,5 @@
 import "./contact-modal.css";
+import { Link } from "react-router-dom";
 
 const ContactModal = ({ onClose }) => {
     return (
@@ -27,6 +28,7 @@ const ContactModal = ({ onClose }) => {
 
                 <form className="modal-form">
                     <div className="modal-row">
+
                         <input
                             type="text"
                             placeholder="Full Name"
@@ -65,7 +67,15 @@ const ContactModal = ({ onClose }) => {
                     </div>
 
                     <p className="privacy-line">
-                        By clicking Contact Us, you acknowledge that you have read our <strong className="highlight">Privacy Statement</strong> and agree to our <strong className="highlight">Terms of Use</strong>.
+                        By clicking Contact Us, you acknowledge that you have read our{" "}
+                        <Link to="/privacy" className="highlight-red">
+                            <strong>Privacy Statement</strong>
+                        </Link>{" "}
+                        and agree to our{" "}
+                        <Link to="/terms" className="highlight-red">
+                            <strong>Terms of Use</strong>
+                        </Link>
+                        .
                     </p>
 
                     <button
