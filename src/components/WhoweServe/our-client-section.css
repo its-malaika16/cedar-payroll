@@ -33,8 +33,18 @@
 
 .clients-track {
   display: flex;
+  align-items: center;
+  width: max-content;
 
-  @keyframes scrollLeft {
+  animation: scrollLeft 25s linear infinite;
+}
+
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes scrollLeft {
   0% {
     transform: translateX(0);
   }
@@ -43,13 +53,6 @@
     transform: translateX(-50%);
   }
 }
-
-  align-items: center;
-  width: max-content;
-
-  animation: scrollLeft 25s linear infinite;
-}
-
 .clients-slider:hover .clients-track {
   animation-play-state: paused;
 }
