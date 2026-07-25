@@ -4,7 +4,7 @@ import OurClient from "../components/WhoweServe/our-client-section";
 import SuccessStory from "../components/WhoweServe/success-story-section";
 import ClientReview from "../components/WhoweServe/client-review-section";
 
-export default function about() {
+export default function WhoweServe() {
   return (
     <>
     <ServeHero />
