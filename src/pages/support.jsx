@@ -1,8 +1,8 @@
-import Support from "../components/Contact/support-section";
+import SupportSection from "../components/Contact/support-section";
 export default function TermsPage() {
   return (
     <>
-      <Support />
+      <SupportSection />
     </>
   );
 }

@@ -1,8 +1,7 @@
 import { useState } from "react";
-import "./support-section.css";
+import "./support-section-new.css";
 import { Link } from "react-router-dom";
 import ContactModal from "../Home/contact-modal";
-
 
 const SupportSection = () => {
     const [showModal, setShowModal] = useState(false);
@@ -28,7 +27,7 @@ const SupportSection = () => {
             </p>
 
              <button
-            className="signin-btn"
+            className="sales-btn"
             onClick={() => setShowModal(true)}
           >
             Contact Sales
