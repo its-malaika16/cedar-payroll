@@ -3,6 +3,10 @@
   background: var(--background);
 }
 
+body {
+  background: yellow !important;
+}
+
 .support-container {
   max-width: 1500px;
   margin: 0 auto;
