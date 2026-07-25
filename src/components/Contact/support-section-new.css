@@ -3,7 +3,7 @@
   background: var(--background);
 }
 
-body {
+.body {
   background: yellow !important;
 }
 
