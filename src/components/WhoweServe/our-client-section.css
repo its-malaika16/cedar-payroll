@@ -33,6 +33,17 @@
 
 .clients-track {
   display: flex;
+
+  @keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
   align-items: center;
   width: max-content;
 
@@ -79,15 +90,7 @@
    /* ANIMATION */
 /* ==========================  */
 
-@keyframes scrollLeft {
-  0% {
-    transform: translateX(0);
-  }
 
-  100% {
-    transform: translateX(-50%);
-  }
-}
 
 /* ==========================
    LAPTOP
