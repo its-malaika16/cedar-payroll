@@ -1,171 +1,304 @@
-.hero {
-  position: relative;
+.hero-banner {
   width: 100%;
-  min-height: calc(100vh - 110px);
+  min-height: 850px;
 
-  background-image: url("/assets/images/home-bg.png");
-  background-size: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background: var(--primary);
 
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 42% 58%;
+
   align-items: center;
 
   overflow: hidden;
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-bottom: 100px;
 }
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-
-  background: rgba(23, 55, 94, 0.69);
-}
+/* ==========================
+   CONTENT
+========================== */
 
 .hero-content {
-  position: relative;
-  z-index: 2;
-
-  text-align: center;
-
-  max-width: 1100px;
-  width: 90%;
-
-  margin: 0 auto;
+  padding-left: 70px;
+  z-index: 5;
 }
 
-.hero-title {
-  color: white;
-  margin-bottom: 2rem;
+.hero-content h1 {
+  color: #ffffff;
+
+  font-size: 76px;
+  font-weight: 800;
+  line-height: 1.1;
+
+  margin-bottom: 35px;
 }
 
-.hero-description {
-  color: white;
+.hero-divider {
+  width: 470px;
+  height: 1px;
 
-  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.3);
 
-  margin: 0 auto 3rem auto;
+  margin-bottom: 35px;
+}
 
+.hero-content p {
+  color: #ffffff;
+
+  font-size: 22px;
+  font-weight: 500;
   line-height: 1.4;
+
+  margin-bottom: 45px;
 }
 
 .hero-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  min-width: 300px;
-  height: 80px;
-
   background: var(--secondary);
-  color: white;
+  color: #ffffff;
 
+  border: none;
   border-radius: 999px;
 
-  font-size: 24px;
+  padding: 18px 40px;
+
+  font-size: 18px;
   font-weight: 700;
 
-  transition: 0.3s ease;
-
   cursor: pointer;
+
+  transition: all 0.3s ease;
 }
 
 .hero-btn:hover {
-  background: #b81c22;
   transform: translateY(-3px);
 }
 
-.hero-btn:active {
-  transform: translateY(0);
+/* ==========================
+   IMAGE SECTION
+========================== */
+
+.hero-image-section {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* RED CURVE */
+
+.red-curve {
+  position: absolute;
+
+  top: 100px;
+  right: 0;
+
+  width: 100%;
+  height: 80%;
+
+  z-index: 1;
+}
+
+/* IMAGE */
+
+.hero-image {
+  position: absolute;
+
+  top: 100px;
+  right: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 2;
+
+  clip-path: ellipse(95% 95% at 100% 0%);
 }
 
 /* ==========================
-   Large Desktop
+   LARGE DESKTOP
 ========================== */
 
-@media (min-width: 1600px) {
-  .hero-content {
-    max-width: 1300px;
+@media (min-width: 1700px) {
+  .hero-banner {
+    min-height: 950px;
+  }
+
+  .hero-content h1 {
+    font-size: 92px;
+  }
+
+  .hero-content p {
+    font-size: 24px;
+  }
+
+  .hero-image-section {
+    height: 950px;
+  }
+
+  .hero-image,
+  .red-curve {
+    height: 820px;
   }
 }
 
 /* ==========================
-   Laptop
+   DESKTOP
+========================== */
+
+@media (max-width: 1400px) {
+  .hero-banner {
+    min-height: 760px;
+  }
+
+  .hero-content h1 {
+    font-size: 62px;
+  }
+
+  .hero-divider {
+    width: 380px;
+  }
+
+  .hero-content p {
+    font-size: 20px;
+  }
+
+  .hero-image-section {
+    height: 760px;
+  }
+
+  .hero-image,
+  .red-curve {
+    height: 620px;
+  }
+}
+
+/* ==========================
+   LAPTOP
 ========================== */
 
 @media (max-width: 1200px) {
-  .hero-description {
-    max-width: 850px;
-  }
-
-  .hero-btn {
-    min-width: 260px;
-    height: 72px;
-  }
-}
-
-/* ==========================
-   Tablet
-========================== */
-
-@media (max-width: 992px) {
-  .hero {
-    min-height: 80vh;
-  }
-
-  .hero-description {
-    max-width: 700px;
-  }
-
-  .hero-btn {
-    min-width: 240px;
-    height: 68px;
-    font-size: 20px;
-  }
-}
-
-/* ==========================
-   Mobile
-========================== */
-
-@media (max-width: 768px) {
-  .hero {
-    min-height: 75vh;
-    padding: 80px 20px;
-  }
-
-  .hero-title {
-    margin-bottom: 1.5rem;
-  }
-
-  .hero-description {
-    margin-bottom: 2rem;
-  }
-
-  .hero-btn {
-    min-width: 220px;
-    height: 60px;
-    font-size: 18px;
-  }
-}
-
-/* ==========================
-   Small Mobile
-========================== */
-
-@media (max-width: 480px) {
-  .hero {
-    min-height: 70vh;
+  .hero-banner {
+    grid-template-columns: 1fr;
+    min-height: auto;
   }
 
   .hero-content {
-    width: 95%;
+    text-align: center;
+    padding: 80px 40px 50px;
+  }
+
+  .hero-divider {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+  }
+
+  .hero-content h1 {
+    font-size: 56px;
+  }
+
+  .hero-image-section {
+    height: 550px;
+  }
+
+  .hero-image,
+  .red-curve {
+    top: 0;
+    height: 550px;
+  }
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .hero-image-section {
+    height: 480px;
+  }
+
+  .hero-image,
+  .red-curve {
+    height: 480px;
+  }
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 70px 20px 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .hero-divider {
+    width: 220px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
   }
 
   .hero-btn {
-    min-width: 200px;
-    height: 56px;
-
+    padding: 14px 30px;
     font-size: 16px;
+  }
+
+  .hero-image-section {
+    height: 340px;
+  }
+
+  .hero-image,
+  .red-curve {
+    height: 340px;
+  }
+}
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .hero-divider {
+    width: 180px;
+  }
+
+  .hero-image-section {
+    height: 260px;
+  }
+
+  .hero-image,
+  .red-curve {
+    height: 260px;
   }
 }
