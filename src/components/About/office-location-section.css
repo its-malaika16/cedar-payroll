@@ -1,7 +1,11 @@
 .global-presence {
   width: 100%;
   background: var(--background);
-  padding: 100px 80px;
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  /* padding: 70px 80px; */
 }
 
 .global-presence-container {
@@ -18,7 +22,7 @@
   align-items: center;
   gap: 30px;
 
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 .global-header-icon {
@@ -36,11 +40,13 @@
 
 .world-map-wrapper {
   position: relative;
-  width: 90%;
+  width: 80%;
+  height: 80%;
+  align-items: center;
 }
 
 .world-map {
-  width: 100%;
+  width: 90%;
   display: block;
 }
 
