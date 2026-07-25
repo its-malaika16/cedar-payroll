@@ -244,13 +244,13 @@ const Footer = () => {
               <h4>What We Offer</h4>
 
               <Link to="/services">Services</Link>
-              <Link to="/payroll-for-employees">
+              <Link to="/services">
                 Payroll for Employees
               </Link>
-              <Link to="/how-it-works">
+              <Link to="/services">
                 How It Works
               </Link>
-              <Link to="/growing-businesses">
+              <Link to="/services">
                 For Growing Businesses
               </Link>
             </div>
@@ -258,16 +258,16 @@ const Footer = () => {
             <div className="footer-column">
               <h4>Who We Serve</h4>
 
-              <Link to="/industries">
+              <Link to="/whoweserve">
                 Industries We Serve
               </Link>
-              <Link to="/clients">
+              <Link to="/whoweserve">
                 Our Clients
               </Link>
-              <Link to="/success-stories">
+              <Link to="/whoweserve">
                 Client Success Stories
               </Link>
-              <Link to="/testimonials">
+              <Link to="/whoweserve">
                 Testimonials
               </Link>
             </div>
@@ -284,19 +284,19 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <Link to="/privacy-policy">
+          <Link to="/privacy">
             Privacy Policy
           </Link>
 
           <span>|</span>
 
-          <Link to="/cookie-policy">
+          <Link to="/cookie">
             Cookie Policy
           </Link>
 
           <span>|</span>
 
-          <Link to="/terms-and-conditions">
+          <Link to="/terms">
             Terms & Conditions
           </Link>
         </div>
