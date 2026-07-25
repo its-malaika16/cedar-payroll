@@ -209,7 +209,7 @@ const IndustriesSection = () => {
                 className="industry-card"
                 key={index}
               >
-                {industry.image}
+                <img src = {industry.image} />
 
                 <div className="industry-content">
                   <h3 className="industry-title">
