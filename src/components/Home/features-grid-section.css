@@ -25,8 +25,6 @@
   width: 100%;
 }
 
-/* make your animation fit inside */
-
 .animation-wrapper .network-section {
   height: 700px;
   min-height: auto;
@@ -38,17 +36,18 @@
 ========================= */
 
 .features-content {
-  color: white;
+  color: #ffffff;
+  max-width: 620px;
 }
 
 .features-title {
-  color: white;
+  color: #ffffff;
 
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.05;
 
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .features-title span {
@@ -58,23 +57,31 @@
 .features-list {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 28px;
 }
 
-.feature-item h3 {
-  color: white;
+.feature-item-list{
+  padding-bottom: 4px;
+}
 
-  font-size: 28px;
+.feature-item-list h3 {
+  color: #ffffff;
+
+  font-size: 22px;
   font-weight: 700;
 
-  margin-bottom: 10px;
+  line-height: 1.4;
+
+  margin-bottom: 6px;
 }
 
-.feature-item p {
+.feature-item-list p {
   color: rgba(255, 255, 255, 0.85);
 
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.5;
+
+  margin-left: 20px;
 }
 
 /* =========================
@@ -99,15 +106,20 @@
 @media (max-width: 1200px) {
   .payroll-features-container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 50px;
   }
 
   .features-content {
+    max-width: 100%;
     text-align: center;
   }
 
   .features-title {
     font-size: 50px;
+  }
+
+  .feature-item-list p {
+    margin-left: 0;
   }
 
   .animation-wrapper .network-section {
@@ -126,14 +138,19 @@
 
   .features-title {
     font-size: 42px;
+    margin-bottom: 35px;
   }
 
-  .feature-item h3 {
-    font-size: 24px;
+  .features-list {
+    gap: 24px;
   }
 
-  .feature-item p {
-    font-size: 16px;
+  .feature-item-list h3 {
+    font-size: 20px;
+  }
+
+  .feature-item-list p {
+    font-size: 15px;
   }
 }
 
@@ -148,15 +165,18 @@
 
   .features-title {
     font-size: 34px;
-    margin-bottom: 35px;
   }
 
-  .feature-item h3 {
-    font-size: 20px;
+  .features-list {
+    gap: 22px;
   }
 
-  .feature-item p {
-    font-size: 15px;
+  .feature-item-list h3 {
+    font-size: 18px;
+  }
+
+  .feature-item-list p {
+    font-size: 14px;
   }
 
   .animation-wrapper .network-section {
@@ -175,14 +195,20 @@
 
   .features-title {
     font-size: 28px;
+    margin-bottom: 30px;
   }
 
-  .feature-item h3 {
-    font-size: 18px;
+  .feature-item-list {
+    gap: 20px;
   }
 
-  .feature-item p {
-    font-size: 14px;
+  .feature-item-list h3 {
+    font-size: 17px;
+  }
+
+  .feature-item-list p {
+    font-size: 13px;
+    line-height: 1.5;
   }
 
   .animation-wrapper .network-section {

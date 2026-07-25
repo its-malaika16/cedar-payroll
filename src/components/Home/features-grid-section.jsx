@@ -20,7 +20,7 @@ const PayrollFeaturesHero = () => {
 
           <div className="features-list">
 
-            <div className="feature-item">
+            <div className="feature-item-list">
               <h3>✓ Employee Management</h3>
               <p>
                 Store and manage all your employee
@@ -28,7 +28,7 @@ const PayrollFeaturesHero = () => {
               </p>
             </div>
 
-            <div className="feature-item">
+            <div className="feature-item-list">
               <h3>✓ Time-sheet Management</h3>
               <p>
                 Track working hours, overtime, and
@@ -36,7 +36,7 @@ const PayrollFeaturesHero = () => {
               </p>
             </div>
 
-            <div className="feature-item">
+            <div className="feature-item-list">
               <h3>✓ P45 & P60 Generation</h3>
               <p>
                 Generate compliant documents with just a
@@ -44,21 +44,21 @@ const PayrollFeaturesHero = () => {
               </p>
             </div>
 
-            <div className="feature-item">
+            <div className="feature-item-list">
               <h3>✓ Employee Portal</h3>
               <p>
                 Employees access payslips securely.
               </p>
             </div>
 
-            <div className="feature-item">
+            <div className="feature-item-list">
               <h3>✓ Tax & NIC Calculations</h3>
               <p>
                 Accurate PAYE and pension calculations.
               </p>
             </div>
 
-            <div className="feature-item">
+            <div className="feature-item-list">
               <h3>✓ Payslip Generation</h3>
               <p>
                 Generate detailed payslips instantly.
