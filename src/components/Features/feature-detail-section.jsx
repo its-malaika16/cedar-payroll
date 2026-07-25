@@ -96,11 +96,11 @@ const features = [
 const PayrollFeaturesSection = () => {
     return (
         <section className="payroll-features-section">
-            <div className="payroll-features-container">
+            <div className="payroll-features-container-home">
                 {features.map((feature, index) => (
                     <div
                         key={index}
-                        className={`feature-card ${feature.imageRight ? "image-right" : "image-left"
+                        className={`payroll-feature-card ${feature.imageRight ? "image-right" : "image-left"
                             }`}
                     >
                         {!feature.imageRight && (
