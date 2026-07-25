@@ -18,13 +18,34 @@
   align-items: center;
 
   border: 2px solid var(--primary);
+  background: #ffffff;
   border-radius: 40px;
-padding-top: 40px;
-  padding-right: 60px;
-  padding-left: 60px;
-  gap: 50px;
 
+  padding: 40px 60px;
+
+  gap: 50px;
   margin-bottom: 80px;
+
+  opacity: 0;
+  transform: translateY(90px) scale(0.96);
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease,
+    box-shadow 0.4s ease;
+}
+
+.payroll-feature-card.show-card {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.payroll-feature-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.08),
+    0 6px 16px rgba(23, 55, 94, 0.12);
 }
 
 .payroll-feature-card:last-child {
@@ -47,23 +68,58 @@ padding-top: 40px;
   color: var(--primary);
   line-height: 1.15;
   margin-bottom: 20px;
+
+  opacity: 0;
+  transform: translateY(30px);
+
+  transition: all 0.7s ease;
 }
 
 .feature-desc {
   color: var(--primary);
   margin-bottom: 35px;
-  line-height: 1.5;
+  line-height: 1.6;
+
+  opacity: 0;
+  transform: translateY(30px);
+
+  transition: all 0.7s ease;
 }
 
 .feature-points {
   list-style: disc;
   padding-left: 22px;
+
+  opacity: 0;
+  transform: translateY(30px);
+
+  transition: all 0.7s ease;
 }
 
 .feature-points li {
   color: var(--primary);
   line-height: 2;
   margin-bottom: 8px;
+}
+
+/* Animation sequence */
+
+.payroll-feature-card.show-card .feature-heading {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.15s;
+}
+
+.payroll-feature-card.show-card .feature-desc {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+.payroll-feature-card.show-card .feature-points {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.45s;
 }
 
 /* ==========================
@@ -81,7 +137,23 @@ padding-top: 40px;
   max-width: 480px;
   height: auto;
   display: block;
+
+  opacity: 0;
+  /* transform: scale(0.85); */
+
+  /* transition:
+    opacity 1s ease,
+    transform 1s ease; */
 }
+
+.payroll-feature-card.show-card .feature-image {
+  opacity: 1;
+  /* transform: scale(1); */
+}
+
+/* .payroll-feature-card:hover .feature-image {
+  transform: scale(1.03);
+} */
 
 /* ==========================
    LARGE DESKTOP
