@@ -10,6 +10,9 @@ const SupportSection = () => {
     <>
     <section className="support-section">
       <div className="support-container">
+        <h2 style={{ color: "red", fontSize: "60px" }}>
+  TEST 123
+</h2>
         <h2 className="support-main-heading">
           Customer Service & Support
         </h2>
