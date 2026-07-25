@@ -5,13 +5,11 @@ import PlatformSolutionsSection from "../components/Home/platform-solution-secti
 import PayrollBankingSection from "../components/Home/platform-banking-section";
 import WhyChooseSection from "../components/Home/why-choose-section";
 import CTASection from "../components/Home/home-cta-section";
-import NetworkAnimation from "../components/Home/network-animation-section";
 
 export default function home() {
   return (
     <>
     <Herosection/>
-    <NetworkAnimation />
     <PayrollFeatures />
     <FeaturesGrid />
     <PlatformSolutionsSection />

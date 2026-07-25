@@ -45,10 +45,17 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
-            to="/contact"
+            to="/about"
             onClick={closeMenu}
           >
             About Cedar Payroll
+          </NavLink>
+
+          <NavLink
+            to="/contact"
+            onClick={closeMenu}
+          >
+            Contact Us
           </NavLink>
         </nav>
 
