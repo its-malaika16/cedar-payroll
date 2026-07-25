@@ -10,6 +10,8 @@ import ScrollToTop from './components/ScrollToTop';
 import TermsPage from './pages/TermsPage.jsx';
 import Privacy from './pages/PrivacyPage.jsx';
 import Support from './pages/support.jsx';
+import WhoweServe from './pages/whoweserve.jsx';
+import Footer from './components/Footer/footer.jsx';
 
 
 function App() {
@@ -25,8 +27,9 @@ function App() {
         <Route path="/terms" element={<TermsPage/>} />
         <Route path="/privacy" element={<Privacy/>} />
         <Route path="/support" element={<Support/>} />
+        <Route path="/whoweserve" element={<WhoweServe/>} />
       </Routes>
-       {/* { <Footer /> } */}
+       { <Footer /> }
     </Router>
   );
 }

@@ -1,107 +1,94 @@
-.payroll-platform {
+.payroll-features-hero {
   width: 100%;
   background: var(--primary);
-  padding: 120px 80px;
+  overflow: hidden;
 }
 
-.payroll-platform-container {
-  max-width: 1440px;
+.payroll-features-container {
+  max-width: 1600px;
   margin: 0 auto;
 
+  padding: 80px;
+
   display: grid;
-  grid-template-columns: 420px 1fr;
-  gap: 120px;
-  align-items: start;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 80px;
+
+  align-items: center;
 }
 
 /* =========================
-   LEFT CONTENT
+   ANIMATION
 ========================= */
 
-.platform-content {
-  padding-top: 30px;
+.animation-wrapper {
+  width: 100%;
 }
 
-.platform-title {
-  color: #ffffff;
-  font-size: --subtitle-2;
-  /* font-weight: 800;
-  line-height: 1.15; */
-  margin-bottom: 50px;
-}
+/* make your animation fit inside */
 
-.platform-title span {
-  color: var(--secondary);
-}
-
-.platform-description {
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.35;
-  max-width: 390px;
+.animation-wrapper .network-section {
+  height: 700px;
+  min-height: auto;
+  background: transparent;
 }
 
 /* =========================
-   FEATURES GRID
+   CONTENT
 ========================= */
 
-.platform-features {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 80px 90px;
-}
-
-.platform-feature-card {
+.features-content {
   color: white;
 }
 
-.feature-icon-wrapper {
-  width: 74px;
-  height: 74px;
-  border-radius: 50%;
-  background: #ffffff;
+.features-title {
+  color: white;
 
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+
+  margin-bottom: 50px;
+}
+
+.features-title span {
+  color: var(--secondary);
+}
+
+.features-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-bottom: 22px;
+  flex-direction: column;
+  gap: 100px;
 }
 
-.feature-icon {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
-}
+.feature-item h3 {
+  color: white;
 
-.feature-title {
-  color: #ffffff;
   font-size: 28px;
   font-weight: 700;
-  line-height: 1.25;
-  margin-bottom: 14px;
+
+  margin-bottom: 10px;
 }
 
-.feature-description {
-  color: #ffffff;
+.feature-item p {
+  color: rgba(255, 255, 255, 0.85);
+
   font-size: 18px;
-  font-weight: 500;
-  line-height: 1.45;
-  max-width: 320px;
+  line-height: 1.7;
 }
 
 /* =========================
-   LARGE DESKTOP
+   DESKTOP
 ========================= */
 
-@media (min-width: 1600px) {
-  .payroll-platform-container {
-    max-width: 1600px;
+@media (max-width: 1400px) {
+  .payroll-features-container {
+    padding: 70px 60px;
+    gap: 60px;
   }
 
-  .platform-features {
-    gap: 90px 120px;
+  .features-title {
+    font-size: 56px;
   }
 }
 
@@ -109,31 +96,22 @@
    LAPTOP
 ========================= */
 
-@media (max-width: 1400px) {
-  .payroll-platform {
-    padding: 100px 60px;
-  }
-
-  .payroll-platform-container {
-    gap: 80px;
-  }
-
-  .platform-title {
-    font-size: 58px;
-  }
-}
-
 @media (max-width: 1200px) {
-  .platform-title {
-    font-size: 52px;
+  .payroll-features-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
-  .platform-features {
-    gap: 60px;
+  .features-content {
+    text-align: center;
   }
 
-  .feature-title {
-    font-size: 24px;
+  .features-title {
+    font-size: 50px;
+  }
+
+  .animation-wrapper .network-section {
+    height: 600px;
   }
 }
 
@@ -142,27 +120,20 @@
 ========================= */
 
 @media (max-width: 992px) {
-  .payroll-platform {
-    padding: 80px 40px;
+  .payroll-features-container {
+    padding: 60px 40px;
   }
 
-  .payroll-platform-container {
-    grid-template-columns: 1fr;
-    gap: 70px;
+  .features-title {
+    font-size: 42px;
   }
 
-  .platform-content {
-    text-align: center;
-    padding-top: 0;
+  .feature-item h3 {
+    font-size: 24px;
   }
 
-  .platform-description {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-
-  .platform-features {
-    gap: 50px 40px;
+  .feature-item p {
+    font-size: 16px;
   }
 }
 
@@ -171,40 +142,25 @@
 ========================= */
 
 @media (max-width: 768px) {
-  .payroll-platform {
-    padding: 70px 20px;
+  .payroll-features-container {
+    padding: 50px 20px;
   }
 
-  .platform-title {
-    font-size: 40px;
-    margin-bottom: 30px;
+  .features-title {
+    font-size: 34px;
+    margin-bottom: 35px;
   }
 
-  .platform-description {
-    font-size: 18px;
-    max-width: 100%;
+  .feature-item h3 {
+    font-size: 20px;
   }
 
-  .platform-features {
-    grid-template-columns: 1fr;
-    gap: 45px;
+  .feature-item p {
+    font-size: 15px;
   }
 
-  .platform-feature-card {
-    text-align: center;
-  }
-
-  .feature-icon-wrapper {
-    margin: 0 auto 20px;
-  }
-
-  .feature-title {
-    font-size: 24px;
-  }
-
-  .feature-description {
-    font-size: 16px;
-    max-width: 100%;
+  .animation-wrapper .network-section {
+    height: 500px;
   }
 }
 
@@ -213,33 +169,23 @@
 ========================= */
 
 @media (max-width: 480px) {
-  .payroll-platform {
-    padding: 60px 16px;
+  .payroll-features-container {
+    padding: 40px 16px;
   }
 
-  .platform-title {
-    font-size: 32px;
+  .features-title {
+    font-size: 28px;
   }
 
-  .platform-description {
-    font-size: 16px;
+  .feature-item h3 {
+    font-size: 18px;
   }
 
-  .feature-icon-wrapper {
-    width: 60px;
-    height: 60px;
+  .feature-item p {
+    font-size: 14px;
   }
 
-  .feature-icon {
-    width: 28px;
-    height: 28px;
-  }
-
-  .feature-title {
-    font-size: 22px;
-  }
-
-  .feature-description {
-    font-size: 15px;
+  .animation-wrapper .network-section {
+    height: 420px;
   }
 }

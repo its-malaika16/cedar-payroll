@@ -38,7 +38,7 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
-            to="/about"
+            to="/whoweserve"
             onClick={closeMenu}
           >
             Who We Serve
