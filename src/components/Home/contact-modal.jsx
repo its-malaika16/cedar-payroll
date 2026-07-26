@@ -4,8 +4,6 @@ import { useState } from "react";
 
 
 const ContactModal = ({ onClose }) => {
-
-  const ContactSection = () => {
     const [formData, setFormData] = useState({
       firstname: "",
       email: "",
@@ -515,6 +513,5 @@ const ContactModal = ({ onClose }) => {
       </>
     );
   };
-};
 
 export default ContactModal;
