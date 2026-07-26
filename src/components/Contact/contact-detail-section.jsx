@@ -17,7 +17,7 @@ const contacts = [
         icon: "/assets/icons/location.svg",
         title: "Offices",
         line1: "United Kingdom",
-        line2: "UAE • Lebanon • USA • UK",
+        line2: "UAE • Lebanon • USA • UK • KSA",
     },
     {
         icon: "/assets/icons/clock.svg",
