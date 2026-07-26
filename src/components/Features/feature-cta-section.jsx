@@ -8,7 +8,7 @@ const ManagedPayrollSection = () => {
         {/* Left Image */}
 
         <div className="managed-payroll-image-wrapper">
-          <img src = "assets/images/feature-page.png"
+          <img src = "assets/images/feature-page.svg"
             alt="Managed Payroll"
             className="managed-payroll-image"
           />

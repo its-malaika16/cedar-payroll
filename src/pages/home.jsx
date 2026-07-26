@@ -10,7 +10,7 @@ export default function home() {
   return (
     <>
     <Herosection/>
-    <PayrollFeatures />
+    {/* <PayrollFeatures /> */}
     <FeaturesGrid />
     <PlatformSolutionsSection />
     <PayrollBankingSection />

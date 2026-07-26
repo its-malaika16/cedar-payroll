@@ -27,7 +27,7 @@ const PlatformSolutionsSection = () => {
         {/* Left Image */}
 
         <div className="platform-image-wrapper">
-          <img src = "/assets/images/home.png" className = "platform-image"/>
+          <img src = "/assets/images/home.svg" className = "platform-image"/>
         </div>
 
         {/* Right Content */}

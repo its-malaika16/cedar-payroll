@@ -1,37 +1,37 @@
 const industries = [
   {
     title: "Hospitality",
-    image: "/assets/images/hospitality.png",
+    image: "/assets/images/hospitality.svg",
     description:
       "From restaurants and hotels to cafés, we handle the complex shift patterns, tips, and rotas that hospitality payroll demands, accurately and on time.",
   },
   {
     title: "Retail",
-    image: "/assets/images/retail.png",
+    image: "/assets/images/retail.svg",
     description:
       "Multi-site retail businesses trust us with variable hours, seasonal staff, and high-volume payroll runs, all delivered with built-in HMRC compliance.",
   },
   {
     title: "Construction",
-    image: "/assets/images/construction.png",
+    image: "/assets/images/construction.svg",
     description:
       "CIS-ready payroll for subcontractors plus PAYE for permanent staff, with detailed cost reporting per site and project.",
   },
   {
     title: "Technology",
-    image: "/assets/images/technology.png",
+    image: "/assets/images/technology.svg",
     description:
       "Payroll support for tech companies with flexible pay structures, remote teams, contractor payments, and full HMRC compliance.",
   },
   {
     title: "Healthcare",
-    image: "/assets/images/healthcare.png",
+    image: "/assets/images/healthcare.svg",
     description:
       "From private clinics to care homes, we manage rotas, statutory payments, and pension auto enrolment with the sensitivity healthcare requires.",
   },
   {
     title: "Education",
-    image: "/assets/images/education.png",
+    image: "/assets/images/education.svg",
     description:
       "Payroll services for schools, colleges, and training centres, managing staff salaries, pensions, and compliance accurately and confidentially.",
   },

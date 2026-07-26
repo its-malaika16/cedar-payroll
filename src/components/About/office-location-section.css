@@ -6,6 +6,7 @@
   padding-top: 50px;
   padding-bottom: 10px;
   /* padding: 70px 80px; */
+  margin-bottom: 30px;
 }
 
 .global-presence-container {
@@ -22,7 +23,7 @@
   align-items: center;
   gap: 30px;
 
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .global-header-icon {
@@ -40,14 +41,21 @@
 
 .world-map-wrapper {
   position: relative;
-  width: 80%;
-  height: 80%;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
+
+  margin-bottom: 30px;
 }
 
 .world-map {
-  width: 90%;
+  width: 100%;
+  max-width: 1200px;
+
   display: block;
+  margin: 0 auto;
 }
 
 /* =====================

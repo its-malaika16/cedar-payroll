@@ -39,7 +39,7 @@ const GlobalPresenceSection = () => {
                 </div>
 
                 <div className="world-map-wrapper">
-                    <img src="/assets/images/presence.png"
+                    <img src="/assets/images/pin.svg"
                         alt="World Map"
                         className="world-map"
                     />

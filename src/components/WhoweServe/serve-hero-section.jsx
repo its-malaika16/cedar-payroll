@@ -9,7 +9,7 @@ const IndustryBannerSection = () => {
             width: 100%;
             min-height: 500px;
 
-            background-image: url("/assets/images/serve-hero.png");
+            background-image: url("/assets/images/serve-hero.svg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -41,7 +41,7 @@ const IndustryBannerSection = () => {
           .industry-banner-title {
             color: #ffffff;
 
-            font-size: 72px;
+            font-size: 64px;
             font-weight: 800;
             line-height: 1.1;
 
@@ -69,7 +69,7 @@ const IndustryBannerSection = () => {
             }
 
             .industry-banner-title {
-              font-size: 84px;
+              font-size: 64px;
             }
 
             .industry-banner-description {

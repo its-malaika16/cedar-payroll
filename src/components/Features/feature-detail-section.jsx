@@ -6,7 +6,7 @@ const features = [
     title: "Time-sheet Management",
     description:
       "Track working hours, overtime, and attendance with ease.",
-    image: "/assets/images/weekly.jpg",
+    image: "/assets/images/weekly.svg",
     imageRight: true,
     points: [
       "Daily, weekly, and monthly time-sheets",
@@ -21,7 +21,7 @@ const features = [
     title: "Payroll & Payslip Generation",
     description:
       "Calculate pay, deductions, and generate detailed payslips.",
-    image: "/assets/images/payroll.jpg",
+    image: "/assets/images/payroll.svg",
     imageRight: false,
     points: [
       "Gross to net pay calculations",
@@ -36,7 +36,7 @@ const features = [
     title: "Employee Self-Service Portal",
     description:
       "Employees can access their payslips and documents securely.",
-    image: "/assets/images/portal.jpg",
+    image: "/assets/images/portal.svg",
     imageRight: true,
     points: [
       "Secure email-based access",
@@ -51,7 +51,7 @@ const features = [
     title: "UK Compliance & Reporting",
     description:
       "Stay compliant with all HMRC regulations and requirements.",
-    image: "/assets/images/compliance.jpg",
+    image: "/assets/images/compliance.svg",
     imageRight: false,
     points: [
       "Real-Time Information (RTI) submissions",
@@ -66,7 +66,7 @@ const features = [
     title: "Employee Information Management",
     description:
       "Centralise all your employee data in one secure GDPR-compliant platform.",
-    image: "/assets/images/employee.jpg",
+    image: "/assets/images/employee.svg",
     imageRight: true,
     points: [
       "Personal details and contact information",
@@ -81,7 +81,7 @@ const features = [
     title: "P45 & P60 Generation",
     description:
       "Generate HMRC-compliant P45 and P60 documents automatically.",
-    image: "/assets/images/tax.jpg",
+    image: "/assets/images/tax.svg",
     imageRight: false,
     points: [
       "Automatic P45 on employee departure",
