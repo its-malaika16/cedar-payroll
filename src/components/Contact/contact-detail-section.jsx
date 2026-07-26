@@ -24,11 +24,13 @@ const ContactSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
       setLoading(true);
 
+
+    try {
+    
       const response = await fetch(
-        "https://cedarpayroll.co.uk/contact.php",
+        "https://cedarpayroll.co.uk/api/contact.php",
         {
           method: "POST",
           headers: {
