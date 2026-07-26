@@ -277,9 +277,118 @@ const ContactModal = ({ onClose }) => {
 
               <select>
                 <option>United States</option>
-                <option>United Kingdom</option>
-                <option>UAE</option>
-                <option>Lebanon</option>
+              <option>United Kingdom</option>
+              <option>UAE</option>
+              <option>Lebanon</option>
+
+              <option>Afghanistan</option>
+              <option>Albania</option>
+              <option>Algeria</option>
+              <option>Andorra</option>
+              <option>Angola</option>
+              <option>Argentina</option>
+              <option>Armenia</option>
+              <option>Australia</option>
+              <option>Austria</option>
+              <option>Azerbaijan</option>
+              <option>Bahrain</option>
+              <option>Bangladesh</option>
+              <option>Belarus</option>
+              <option>Belgium</option>
+              <option>Belize</option>
+              <option>Benin</option>
+              <option>Bhutan</option>
+              <option>Bolivia</option>
+              <option>Bosnia and Herzegovina</option>
+              <option>Botswana</option>
+              <option>Brazil</option>
+              <option>Brunei</option>
+              <option>Bulgaria</option>
+              <option>Burkina Faso</option>
+              <option>Burundi</option>
+              <option>Cambodia</option>
+              <option>Cameroon</option>
+              <option>Canada</option>
+              <option>Chile</option>
+              <option>China</option>
+              <option>Colombia</option>
+              <option>Costa Rica</option>
+              <option>Croatia</option>
+              <option>Cyprus</option>
+              <option>Czech Republic</option>
+              <option>Denmark</option>
+              <option>Egypt</option>
+              <option>Estonia</option>
+              <option>Ethiopia</option>
+              <option>Finland</option>
+              <option>France</option>
+              <option>Georgia</option>
+              <option>Germany</option>
+              <option>Ghana</option>
+              <option>Greece</option>
+              <option>Hungary</option>
+              <option>Iceland</option>
+              <option>India</option>
+              <option>Indonesia</option>
+              <option>Iran</option>
+              <option>Iraq</option>
+              <option>Ireland</option>
+              <option>Israel</option>
+              <option>Italy</option>
+              <option>Japan</option>
+              <option>Jordan</option>
+              <option>Kazakhstan</option>
+              <option>Kenya</option>
+              <option>Kuwait</option>
+              <option>Latvia</option>
+              <option>Libya</option>
+              <option>Lithuania</option>
+              <option>Luxembourg</option>
+              <option>Malaysia</option>
+              <option>Maldives</option>
+              <option>Malta</option>
+              <option>Mexico</option>
+              <option>Monaco</option>
+              <option>Mongolia</option>
+              <option>Morocco</option>
+              <option>Myanmar</option>
+              <option>Nepal</option>
+              <option>Netherlands</option>
+              <option>New Zealand</option>
+              <option>Nigeria</option>
+              <option>Norway</option>
+              <option>Oman</option>
+              <option>Pakistan</option>
+              <option>Philippines</option>
+              <option>Poland</option>
+              <option>Portugal</option>
+              <option>Qatar</option>
+              <option>Romania</option>
+              <option>Russia</option>
+              <option>Saudi Arabia</option>
+              <option>Singapore</option>
+              <option>Slovakia</option>
+              <option>Slovenia</option>
+              <option>South Africa</option>
+              <option>South Korea</option>
+              <option>Spain</option>
+              <option>Sri Lanka</option>
+              <option>Sweden</option>
+              <option>Switzerland</option>
+              <option>Syria</option>
+              <option>Taiwan</option>
+              <option>Thailand</option>
+              <option>Tunisia</option>
+              <option>Turkey</option>
+              <option>Uganda</option>
+              <option>Ukraine</option>
+              <option>Uruguay</option>
+              <option>Uzbekistan</option>
+              <option>Venezuela</option>
+              <option>Vietnam</option>
+              <option>Yemen</option>
+              <option>Zambia</option>
+              <option>Zimbabwe</option>
               </select>
             </div>
 
