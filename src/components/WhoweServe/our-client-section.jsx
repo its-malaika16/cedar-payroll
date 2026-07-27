@@ -1,6 +1,5 @@
 const logos = [
   "/assets/images/ark-logo.png",
-  "/assets/images/bunzl-logo.png",
   "/assets/images/Harris-logo.png",
   "/assets/images/mams-logo.png",
   "/assets/images/showcase-logo.jpg",
