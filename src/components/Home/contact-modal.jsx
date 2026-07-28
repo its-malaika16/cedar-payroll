@@ -84,7 +84,7 @@ const ContactModal = ({ onClose }) => {
 
           .modal-container {
             width: 100%;
-            max-width: 1000px;
+            max-width: 600px;
             background: #ffffff;
             padding: 50px;
             position: relative;
@@ -123,7 +123,7 @@ const ContactModal = ({ onClose }) => {
 
           .modal-row {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
             gap: 24px;
             margin-bottom: 24px;
           }
@@ -175,7 +175,7 @@ const ContactModal = ({ onClose }) => {
 
           @media (min-width: 1600px) {
             .modal-container {
-              max-width: 1100px;
+              max-width: 800px;
             }
 
             .modal-title {
@@ -191,7 +191,7 @@ const ContactModal = ({ onClose }) => {
 
           @media (max-width: 1400px) {
             .modal-container {
-              max-width: 900px;
+              max-width: 800px;
             }
           }
 
