@@ -6,7 +6,7 @@ const contacts = [
     {
         icon: "/assets/icons/phone.svg",
         title: "Phone",
-        line1: "+44 (0) 20 1234 5678",
+        line1: "+971 50 429 4194",
         line2: "Mon–Fri, 9:00 AM – 5:00 PM",
     },
     {

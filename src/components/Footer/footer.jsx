@@ -217,7 +217,7 @@ const Footer = () => {
             <div className="footer-contact">
               <div className="contact-item">
                 <img src = "/assets/icons/phone.svg" />
-                <span>+44 (0) 20 1234 5678</span>
+                <span>+971 50 429 4194</span>
               </div>
 
               <div className="contact-item">
