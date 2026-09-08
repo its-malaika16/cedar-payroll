@@ -7,7 +7,6 @@ const logos = [
   "/assets/images/hats-logo.png",
   "/assets/images/teachwise-logo.png",
   "/assets/images/thinkgroup-logo.png",
-  "/assets/images/tps-logo.png",
 ];
 
 const ClientsSection = () => {
