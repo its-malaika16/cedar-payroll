@@ -7,20 +7,18 @@ const ManagedPayrollSection = () => {
       <div className="managed-payroll-container">
         {/* Left Image */}
 
-        <div className="managed-payroll-image-wrapper">
+        {/* <div className="managed-payroll-image-wrapper">
           <img src = "assets/images/feature-page.svg"
             alt="Managed Payroll"
             className="managed-payroll-image"
           />
-        </div>
+        </div> */}
 
         {/* Right Content */}
 
         <div className="managed-payroll-content">
           <p className="managed-payroll-title CTAheading">
-            Perfect for Growing
-            <br />
-            Businesses
+            Perfect for Growing Businesses
           </p>
 
           <p className="managed-payroll-description body-5">
@@ -32,9 +30,9 @@ const ManagedPayrollSection = () => {
           </p>
 
           <div className="managed-payroll-benefits body-6">
-            <p>Save up to 40 hours per month</p>
-            <p>100% HMRC compliant</p>
-            <p>Dedicated account manager</p>
+            <p><span style={{ color: "red" }}>✓</span>  Save up to 40 hours per month</p>
+            <p><span style={{ color: "red" }}>✓</span>  100% HMRC compliant</p>
+            <p><span style={{ color: "red" }}>✓</span>  Dedicated account manager</p>
           </div>
 
           <Link to="/contact" className="managed-payroll-btn">
