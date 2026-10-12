@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Link } from "react-router-dom";
 import "./navbar.css";
 
 const Navbar = () => {
@@ -69,11 +68,9 @@ const Navbar = () => {
             Support
           </NavLink>
 
-          <Link to="https://www.cedarpayroll.com">
-            <button className="signin-btn">
-              Sign In
-            </button>
-          </Link>
+          <a href="/login" className="signin-btn" onClick={closeMenu}>
+            Sign In
+          </a>
         </div>
 
         {/* Mobile Hamburger */}

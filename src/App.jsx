@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar/navbar.jsx';
 import Home from './pages/home.jsx';
@@ -17,9 +17,9 @@ import Cookie from './pages/CookiePage.jsx';
 
 function App() {
   return (
-    <Router>
-         <ScrollToTop />
-      { <Navbar /> }
+    <>
+      <ScrollToTop />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
@@ -31,8 +31,8 @@ function App() {
         <Route path="/whoweserve" element={<WhoweServe/>} />
         <Route path="/cookie" element={<Cookie/>} />
       </Routes>
-       { <Footer /> }
-    </Router>
+      <Footer />
+    </>
   );
 }
 

@@ -199,3 +199,28 @@
 
   .hero-card {
     padding: 50px 20px;
+  }
+
+  .hero-card h1 {
+    font-size: 36px;
+  }
+
+  .hero-card p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-card h1 {
+    font-size: 30px;
+  }
+
+  .hero-tag span {
+    font-size: 11px;
+    padding: 8px 16px;
+  }
+
+  .breadcrumb {
+    font-size: 11px;
+  }
+}
