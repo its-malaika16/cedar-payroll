@@ -36,6 +36,7 @@ $phone      = trim($data["phone"] ?? "");
 $company    = trim($data["company"] ?? "");
 $employees  = trim($data["employees"] ?? "");
 $country = trim($data["country"] ?? "");
+$needs = trim($data["needs"] ?? "");
 
 // Validate required fields
 if (
@@ -101,6 +102,8 @@ if ($stmt->execute()) {
     $to = "support@cedarpayroll.com";
     $subject = "New Cedar Payroll Enquiry";
 
+    $needsHtml = nl2br(htmlspecialchars($needs, ENT_QUOTES, "UTF-8"));
+
     $message = "
     <html>
     <body>
@@ -112,8 +115,9 @@ if ($stmt->execute()) {
         <p><strong>Company:</strong> {$company}</p>
         <p><strong>Employees:</strong> {$employees}</p>
 
-        <p><strong>Country:</strong></p>
-        <p>{$country}</p>
+        <p><strong>Country:</strong> {$country}</p>
+        <p><strong>Payroll needs:</strong></p>
+        <p>{$needsHtml}</p>
     </body>
     </html>
     ";

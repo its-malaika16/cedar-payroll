@@ -1,180 +1,82 @@
+.features-page {
+  background: #f8f7f4;
+}
+
 .feature-hero {
-  width: 100%;
-  background: var(--primary);
+  position: relative;
+  overflow: hidden;
+  background: #f8f7f4;
+  min-height: 460px;
+}
 
-  min-height: 600px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 120px 20px;
+.feature-hero-orbs {
+  position: absolute;
+  top: -6%;
+  right: 0;
+  height: 118%;
+  width: auto;
+  pointer-events: none;
+  z-index: 0;
+  user-select: none;
 }
 
 .feature-hero-container {
-  max-width: 1200px;
-  width: 100%;
+  position: relative;
+  z-index: 1;
+  width: min(var(--page-max), 100%);
   margin: 0 auto;
-  text-align: center;
+  padding: clamp(56px, 7vw, 88px) var(--page-gutter) clamp(48px, 6vw, 72px);
+}
+
+.feature-hero-kicker {
+  font-size: clamp(14px, 1.05vw, 17px);
+  letter-spacing: 0.16em;
+  margin-bottom: 14px;
 }
 
 .feature-hero-title {
-  color: white;
-  /* font-size: 64px;
-  font-weight: 800; */
-  line-height: 1.15;
+  margin: 0 0 20px;
+  font-size: clamp(36px, 4.6vw, 56px);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  color: var(--primary);
+}
 
-  margin-bottom: 35px;
+.feature-hero-title span {
+  color: var(--secondary);
+  white-space: nowrap;
 }
 
 .feature-hero-description {
-  max-width: 900px;
-  margin: 0 auto;
-
-  color: white;
-
-  /* font-size: 24px;
-  font-weight: 600; */
-  line-height: 1.4;
+  max-width: 34.5em;
+  color: #3a4b60;
+  font-size: clamp(16px, 1.15vw, 20px);
+  line-height: 1.5;
 }
 
-/* =========================
-   EXTRA LARGE DESKTOP
-========================= */
-
-@media (min-width: 1800px) {
+@media (max-width: 900px) {
   .feature-hero {
-    min-height: 700px;
+    min-height: 0;
   }
 
-  .feature-hero-title {
-    font-size: 72px;
+  .feature-hero-orbs {
+    height: 85%;
+    opacity: 0.7;
   }
 
-  .feature-hero-description {
-    font-size: 28px;
-  }
-}
-
-/* =========================
-   LARGE DESKTOP
-========================= */
-
-@media (max-width: 1400px) {
-  .feature-hero {
-    min-height: 550px;
-    padding: 100px 40px;
-  }
-
-  .feature-hero-title {
-    font-size: 56px;
+  .feature-hero-title span {
+    white-space: normal;
   }
 }
 
-/* =========================
-   LAPTOP
-========================= */
-
-@media (max-width: 1200px) {
-  .feature-hero-title {
-    font-size: 48px;
+@media (max-width: 640px) {
+  .feature-hero-container {
+    padding: 36px var(--page-gutter) 28px;
   }
 
-  .feature-hero-description {
-    font-size: 22px;
-    max-width: 800px;
-  }
-}
-
-/* =========================
-   TABLET
-========================= */
-
-@media (max-width: 992px) {
-  .feature-hero {
-    min-height: 500px;
-    padding: 90px 30px;
-  }
-
-  .feature-hero-title {
-    font-size: 42px;
-  }
-
-  .feature-hero-description {
-    font-size: 20px;
-    max-width: 700px;
-  }
-}
-
-/* =========================
-   MOBILE LARGE
-========================= */
-
-@media (max-width: 768px) {
-  .feature-hero {
-    min-height: 420px;
-    padding: 80px 20px;
-  }
-
-  .feature-hero-title {
-    font-size: 36px;
-    margin-bottom: 24px;
-  }
-
-  .feature-hero-description {
-    font-size: 18px;
-  }
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 576px) {
-  .feature-hero {
-    min-height: 380px;
-  }
-
-  .feature-hero-title {
-    font-size: 32px;
-  }
-
-  .feature-hero-description {
-    font-size: 16px;
-  }
-}
-
-/* =========================
-   SMALL MOBILE
-========================= */
-
-@media (max-width: 480px) {
-  .feature-hero {
-    min-height: 350px;
-    padding: 70px 16px;
-  }
-
-  .feature-hero-title {
-    font-size: 28px;
-    line-height: 1.2;
-  }
-
-  .feature-hero-description {
-    font-size: 15px;
-    line-height: 1.5;
-  }
-}
-
-/* =========================
-   VERY SMALL DEVICES
-========================= */
-
-@media (max-width: 360px) {
-  .feature-hero-title {
-    font-size: 24px;
-  }
-
-  .feature-hero-description {
-    font-size: 14px;
+  .feature-hero-orbs {
+    height: 220px;
+    opacity: 0.35;
   }
 }

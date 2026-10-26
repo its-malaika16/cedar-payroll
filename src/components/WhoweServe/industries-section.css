@@ -1,194 +1,113 @@
 .industries-section {
   width: 100%;
   background: var(--background);
-  padding: 100px 80px;
 }
 
 .industries-container {
-  max-width: 1450px;
+  width: min(var(--page-max), 100%);
   margin: 0 auto;
+  padding: clamp(48px, 6vw, 80px) var(--page-gutter) clamp(56px, 7vw, 96px);
+  border-top: 1px solid rgba(23, 55, 94, 0.14);
 }
 
 .industries-heading {
+  margin: 0 0 14px;
+  color: var(--secondary);
+  font-size: clamp(28px, 3.6vw, 42px);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1.15;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.industries-lead {
+  max-width: 42em;
+  margin: 0 auto clamp(28px, 4vw, 40px);
   color: var(--primary);
-
-  margin-bottom: 60px;
+  font-size: clamp(16px, 1.15vw, 19px);
+  line-height: 1.55;
+  text-align: center;
 }
 
-/* ==========================
-   GRID
-========================== */
+.industries-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-.industries-grid {
+.industry-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  grid-template-columns: 72px minmax(0, 1fr) minmax(220px, 438px);
+  gap: 16px 28px;
+  align-items: center;
+  padding: clamp(22px, 2.6vw, 32px) 0;
+  border-bottom: 1px solid rgba(23, 55, 94, 0.12);
+  transition: background-color 0.25s ease;
 }
 
-/* ==========================
-   CARD
-========================== */
-
-.industry-card {
-  background: #ffffff;
-
-  border: 1px solid rgba(23, 55, 94, 0.2);
-  border-radius: 40px;
-
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
-
-  height: 100%;
-
-  transition: all 0.3s ease;
+.industry-row:first-child {
+  border-top: 1px solid rgba(23, 55, 94, 0.12);
 }
 
-.industry-card:hover {
-  transform: translateY(-5px);
-
-  box-shadow: 0 10px 30px rgba(23, 55, 94, 0.12);
+.industry-number {
+  color: #c8ced6;
+  font-size: clamp(36px, 4vw, 52px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
 }
 
-.industry-image {
-  width: 103%;
-  height: 230px;
-
-  object-fit: cover;
-  display: block;
-}
-
-.industry-content {
-  padding: 24px;
-
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+.industry-copy {
+  min-width: 0;
 }
 
 .industry-title {
-  color: var(--secondary);
-
-  margin-bottom: 14px;
+  margin: 0 0 8px;
+  color: var(--primary);
+  font-size: clamp(22px, 2.1vw, 28px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  transition: color 0.25s ease;
 }
 
 .industry-description {
-  color: var(--primary);
-
-  line-height: 1.7;
+  margin: 0;
+  max-width: 28em;
+  color: #3a4b60;
+  font-size: clamp(15px, 1.05vw, 17px);
+  line-height: 1.55;
 }
 
-/* ==========================
-   LARGE DESKTOP
-========================== */
-
-@media (min-width: 1600px) {
-  .industries-container {
-    max-width: 1650px;
-  }
-
-  .industry-image {
-    height: 260px;
-  }
+.industry-photo {
+  display: block;
+  width: 100%;
+  max-width: 438px;
+  height: auto;
+  justify-self: end;
 }
 
-/* ==========================
-   DESKTOP
-========================== */
-
-@media (max-width: 1400px) {
-  .industries-section {
-    padding: 90px 60px;
-  }
-
-  .industry-image {
-    height: 220px;
+@media (hover: hover) {
+  .industry-row:hover .industry-title {
+    color: var(--secondary);
   }
 }
 
-/* ==========================
-   LAPTOP
-========================== */
-
-@media (max-width: 1200px) {
-  .industries-grid {
-    gap: 22px;
+@media (max-width: 860px) {
+  .industry-row {
+    grid-template-columns: 56px minmax(0, 1fr);
   }
 
-  .industry-image {
-    height: 200px;
+  .industry-photo {
+    grid-column: 1 / -1;
+    max-width: 100%;
+    justify-self: stretch;
   }
 }
 
-/* ==========================
-   TABLET
-========================== */
-
-@media (max-width: 992px) {
-  .industries-section {
-    padding: 80px 40px;
-  }
-
-  .industries-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .industry-image {
-    height: 180px;
-  }
-
-  .industry-content {
-    padding: 20px;
-  }
-}
-
-/* ==========================
-   MOBILE
-========================== */
-
-@media (max-width: 768px) {
-  .industries-section {
-    padding: 70px 20px;
-  }
-
-  .industries-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .industries-heading {
-    margin-bottom: 40px;
-  }
-
-  .industry-image {
-    height: 220px;
-  }
-
-  .industry-content {
-    padding: 20px;
-  }
-}
-
-/* ==========================
-   SMALL MOBILE
-========================== */
-
-@media (max-width: 480px) {
-  .industries-section {
-    padding: 60px 16px;
-  }
-
-  .industry-card {
-    border-radius: 20px;
-  }
-
-  .industry-image {
-    height: 180px;
-  }
-
-  .industry-content {
-    padding: 18px;
+@media (max-width: 640px) {
+  .industry-number {
+    font-size: 32px;
   }
 }

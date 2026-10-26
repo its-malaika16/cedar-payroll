@@ -3,17 +3,24 @@ import "./feature-hero-section.css";
 const FeatureHeroSection = () => {
   return (
     <section className="feature-hero">
+      <img
+        className="feature-hero-orbs"
+        src="/assets/redesign/what-we-offer.svg"
+        alt=""
+        aria-hidden="true"
+      />
       <div className="feature-hero-container">
-        <h1 className="feature-hero-title main-title">
-          Payroll Infrastructure Built
+        <p className="cedar-kicker feature-hero-kicker">What we offer</p>
+        <h1 className="feature-hero-title">
+          Complete Payroll
           <br />
-          for Global Business
+          Solutions
+          <br />
+          <span>For Every Business.</span>
         </h1>
-
-        <p className="feature-hero-description body-3-2 ">
-          Connecting banks, financial institutions and
-          enterprises to our next-generation payment
-          solutions.
+        <p className="feature-hero-description">
+          From payroll processing to compliance and global payments, we provide
+          everything you need in one secure, reliable, and easy-to-use platform.
         </p>
       </div>
     </section>

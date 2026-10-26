@@ -3,19 +3,17 @@ import "./about-hero-section.css";
 const AboutHeroSection = () => {
   return (
     <section className="about-hero">
-      <div className="about-overlay"></div>
-
       <div className="about-content">
-        <h1 className="about-title main-title">
-          People First.
+        <p className="cedar-kicker about-kicker">About Cedar Payroll</p>
+        <h1 className="about-title">
+          Your Payroll.
           <br />
-          Payroll Perfected.
+          <span>Perfectly Managed.</span>
         </h1>
-
-        <p className="about-description body-3-2">
-          We're more than just a payroll provider. We're your
-          trusted partner in ensuring your most valuable asset,
-          your people, are paid accurately and on time.
+        <p className="about-description">
+          Cedar Payroll simplifies payroll management with accurate
+          calculations, secure processes, and seamless solutions that help your
+          business run efficiently.
         </p>
       </div>
     </section>

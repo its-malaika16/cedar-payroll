@@ -1,179 +1,40 @@
 .about-hero {
-  position: relative;
-  width: 100%;
-  min-height: 650px;
-
-  background-image: url("/assets/images/about.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  overflow: hidden;
-}
-
-.about-overlay {
-  position: absolute;
-  inset: 0;
-
-  background: rgba(23, 55, 94, 0.50);
+  background: var(--background);
 }
 
 .about-content {
-  position: relative;
-  z-index: 2;
+  width: min(var(--page-max), 100%);
+  margin: 0 auto;
+  padding: clamp(48px, 6vw, 80px) var(--page-gutter) clamp(40px, 5vw, 64px);
+}
 
-  max-width: 1200px;
-  width: 90%;
-
-  text-align: center;
+.about-kicker {
+  margin: 0 0 16px;
 }
 
 .about-title {
-  color: #ffffff;
-  margin-bottom: 35px;
+  margin: 0 0 20px;
+  color: var(--primary);
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.about-title span {
+  color: var(--secondary);
 }
 
 .about-description {
-  color: #ffffff;
-
-  max-width: 1050px;
-  margin: 0 auto;
+  margin: 0;
+  max-width: 34em;
+  color: var(--primary);
+  font-size: clamp(16px, 1.2vw, 20px);
+  line-height: 1.55;
 }
 
-/* =========================
-   LARGE DESKTOP
-========================= */
-
-@media (min-width: 1600px) {
-  .about-hero {
-    min-height: 780px;
-  }
-
-  .about-title {
-    font-size: 78px;
-  }
-
-  .about-description {
-    font-size: 28px;
-    max-width: 1200px;
-  }
-}
-
-/* =========================
-   DESKTOP
-========================= */
-
-@media (max-width: 1400px) {
-  .about-hero {
-    min-height: 600px;
-  }
-
-  .about-title {
-    font-size: 56px;
-  }
-
-  .about-description {
-    font-size: 22px;
-  }
-}
-
-/* =========================
-   LAPTOP
-========================= */
-
-@media (max-width: 1200px) {
-  .about-hero {
-    min-height: 550px;
-    padding: 0 40px;
-  }
-
-  .about-title {
-    font-size: 50px;
-  }
-
-  .about-description {
-    font-size: 20px;
-    max-width: 900px;
-  }
-}
-
-/* =========================
-   TABLET
-========================= */
-
-@media (max-width: 992px) {
-  .about-hero {
-    min-height: 500px;
-    padding: 0 30px;
-  }
-
-  .about-title {
-    font-size: 42px;
-    margin-bottom: 25px;
-  }
-
-  .about-description {
-    font-size: 18px;
-    max-width: 700px;
-  }
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 768px) {
-  .about-hero {
-    min-height: 450px;
-    padding: 60px 20px;
-  }
-
-  .about-title {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-
-  .about-description {
-    font-size: 17px;
-    line-height: 1.6;
-  }
-}
-
-/* =========================
-   SMALL MOBILE
-========================= */
-
-@media (max-width: 480px) {
-  .about-hero {
-    min-height: 380px;
-    padding: 50px 16px;
-  }
-
-  .about-title {
-    font-size: 30px;
-    line-height: 1.2;
-  }
-
-  .about-description {
-    font-size: 15px;
-    line-height: 1.6;
-  }
-}
-
-/* =========================
-   EXTRA SMALL
-========================= */
-
-@media (max-width: 360px) {
-  .about-title {
-    font-size: 26px;
-  }
-
-  .about-description {
-    font-size: 14px;
+@media (max-width: 640px) {
+  .about-content {
+    padding: 36px var(--page-gutter) 32px;
   }
 }

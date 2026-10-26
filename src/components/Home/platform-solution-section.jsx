@@ -1,22 +1,24 @@
+import { CircleIcon } from "./home-icons";
 import "./platform-solution-section.css";
-import DashboardDemo from "./DashboardDemo";
 
 const solutions = [
   {
-    title: "Employee Records",
+    title: "Multi-Currency Banking",
     description:
-      "Keep employee information organised and up to date in one secure place.",
+      "Hold, manage, and transfer funds across multiple currencies with instant internal transfers and real-time balance tracking.",
+    icon: "/assets/icons/currency.svg",
   },
   {
-    title: "Payslip Generation",
+    title: "Global Payment Solutions",
     description:
-       "Create and distribute payslips in just a few clicks.",
+      "Process international payments quickly and securely through trusted global networks.",
+    icon: "/assets/icons/feature-globe.svg",
   },
   {
-    title: "Holiday & Absence Tracking",
+    title: "Real-Time FX Services",
     description:
-    "Monitor leave, sickness, and attendance alongside payroll processing.",
-      
+      "Access live exchange rates and automate currency conversions globally.",
+    icon: "/assets/icons/arrow.svg",
   },
 ];
 
@@ -24,36 +26,67 @@ const PlatformSolutionsSection = () => {
   return (
     <section className="platform-solutions">
       <div className="platform-solutions-container">
-        {/* Left Image */}
-
-        <div className="platform-image-wrapper">
-          <img src = "/assets/images/home.svg" className = "platform-image"/>
-        </div>
-
-        {/* Right Content */}
-
         <div className="platform-content">
-          <p className="platform-heading subheading">
-            Efficient & Reliable Payroll
-            {/* <br /> */}
-            
-          </p>
+          <p className="cedar-kicker platform-kicker">Our Features</p>
+          <h2 className="platform-heading">
+            Efficient &amp;
+            <br />
+            Reliable Payroll
+          </h2>
 
           <div className="solution-list">
-            {solutions.map((item, index) => (
-              <div
-                key={index}
-                className={`solution-item ${
-                  index !== solutions.length - 1
-                    ? "with-border"
-                    : ""
-                }`}
-              >
-                <h3 className = "body-4">{item.title}</h3>
-                <p className = "body-5">{item.description}</p>
+            {solutions.map((item) => (
+              <div className="solution-item" key={item.title}>
+                <CircleIcon variant="light">
+                  <img src={item.icon} alt="" width="30" height="30" />
+                </CircleIcon>
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="platform-image-wrapper">
+          <svg
+            className="platform-art"
+            viewBox="0 0 550 570"
+            role="img"
+            aria-label="Payroll features on a global network"
+          >
+            <ellipse
+              className="platform-orb platform-orb--soft"
+              cx="256"
+              cy="439.5"
+              rx="130"
+              ry="130.5"
+            />
+            <ellipse
+              className="platform-orb platform-orb--grey"
+              cx="204"
+              cy="230.5"
+              rx="130"
+              ry="130.5"
+            />
+            <ellipse
+              className="platform-orb platform-orb--navy"
+              cx="364"
+              cy="130.5"
+              rx="130"
+              ry="130.5"
+            />
+            <image
+              href="/assets/redesign/features-hi.png"
+              xlinkHref="/assets/redesign/features-hi.png"
+              x="0"
+              y="31"
+              width="550"
+              height="510"
+              preserveAspectRatio="xMidYMid meet"
+            />
+          </svg>
         </div>
       </div>
     </section>
